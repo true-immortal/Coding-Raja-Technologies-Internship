@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.playlist {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.playlist h2 {
+    margin-top: 0;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.playlist li:hover {
+    background-color: #444;
+}
+
+.player {
+    padding: 20px;
+    flex: 1;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+}
+
+.track-info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.controls button:hover {
+    background-color: #444;
+}
+
+.progress-container,
+.volume-container {
+    margin: 10px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.options button:hover {
+    background-color: #444;
+}
