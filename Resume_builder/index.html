@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Portfolio Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="hpage.html">Home</a></li>
+                <li><a href="index.html" class="active">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="signup">
+            <h2>Create Your Portfolio</h2>
+            <form id="signup-form" action="resume.html" target="_blank" method="GET">
+                <!-- User Information Fields -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required>
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" required></textarea>
+                <label for="portfolio-link">LinkedIn URL:</label>
+                <input type="url" id="portfolio-link" name="portfolio-link">
+                <label for="skills">Skills (comma separated):</label>
+                <input type="text" id="skills" name="skills" required>
+                <label for="picture">Upload Picture:</label>
+                <input type="file" id="picture" name="picture" accept="image/*">
+
+                <!-- Work Experience Fields -->
+                <div id="work-experience-container">
+                    <h3>Work Experience</h3>
+                    <div class="work-experience">
+                        <label for="job-title">Job Title:</label>
+                        <input type="text" name="job-title[]">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company[]">
+                        <label for="job-duration">Duration:</label>
+                        <input type="text" name="job-duration[]">
+                        <label for="job-description">Description:</label>
+                        <textarea name="job-description[]"></textarea>
+                    </div>
+                </div>
+                <button type="button" id="add-work-experience">Add Work Experience</button>
+
+                <!-- Education Fields -->
+                <div id="education-container">
+                    <h3>Education</h3>
+                    <div class="education">
+                        <label for="degree">Degree:</label>
+                        <input type="text" name="degree[]">
+                        <label for="institution">Institution:</label>
+                        <input type="text" name="institution[]">
+                        <label for="education-duration">Duration:</label>
+                        <input type="text" name="education-duration[]">
+                    </div>
+                </div>
+                <button type="button" id="add-education">Add Education</button>
+
+                <!-- Resume Template Selection -->
+                <label for="template">Choose a Resume Template:</label>
+                <select id="template" name="template" required>
+                    <option value="template1">Template 1</option>
+                    <option value="template2">Template 2</option>
+                    <option value="template3">Template 3</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Portfolio Creator. All rights reserved.</p>
+    </footer>
+</body>
+</html>

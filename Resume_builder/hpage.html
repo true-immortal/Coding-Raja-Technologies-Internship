@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Creator</title>
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url('https://media.newyorker.com/photos/5e3b50c8888b560008098620/master/w_1920,c_limit/Watt-InterviewQs.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+        }
+        header {
+            background: #333333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        header nav ul {
+            list-style: none;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 0.1rem;
+        }
+        header nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        header nav ul li .btn {
+            background: #007BFF;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        header nav ul li .btn:hover {
+            background: #0056b3;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 1rem;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 1rem;
+        }
+        .features-list, .pricing-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: rgb(0,0,0);
+        }
+        .feature, .pricing-option {
+            flex: 1;
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 300px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="text-align: right;">
+                <li><h1 style="float:left; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">PortfolioCreator</h1></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Create Your Portfolio Effortlessly</h1>
+            <p>Build a stunning portfolio in minutes.</p>
+            <a href="index.html" class="btn">Get Started</a>
+        </div>
+    </section>
+    <section id="features">
+        <h2 style="color: rgb(0,0,0);">Features</h2>
+        <div class="features-list">
+            <div class="feature" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+                <h3>Easy to Use</h3>
+                <p>Our platform is designed to be user-friendly and intuitive.</p>
+            </div>
+            <div class="feature" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+                <h3>Customizable Templates</h3>
+                <p>Choose from a variety of templates to suit your style.</p>
+            </div>
+            <div class="feature" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+                <h3>Responsive Design</h3>
+                <p>Your portfolio will look great on any device.</p>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <h2 style="color: rgb(0,0,0);">Pricing</h2>
+        <div class="pricing-list">
+            <div class="pricing-option" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+                <h3>Free Plan</h3>
+                <p>Basic features to get you started.</p>
+                <p>Price: $0/month</p>
+            </div>
+            <div class="pricing-option" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+                <h3>Pro Plan</h3>
+                <p>Advanced features for professionals.</p>
+                <p>Price: $10/month</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 style="color: rgb(0,0,0);">Contact Us</h2>
+        <p style="color: rgb(0,0,0);">Email: <a href="mailto:support@portfoliocreator.com">support@portfoliocreator.com</a></p>
+        <p style="color: rgb(0,0,0);">LinkedIn: <a href="https://www.linkedin.com/company/portfoliocreator">Portfolio Creator</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Portfolio Creator. All rights reserved.</p>
+    </footer>
+</body>
+</html>

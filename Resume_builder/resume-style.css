@@ -1,0 +1,175 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+#resume-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#resume-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#left-box {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#right-box {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#main-content {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+h1, h3 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Template 1 specific styles */
+.template1 #left-box {
+    background-color: darkblue;
+}
+
+.template1 #right-box {
+    background-color: lightgray;
+}
+
+/* Template 2 specific styles */
+.template2 header {
+    background-color: darkred;
+}
+
+.template2 #main-content {
+    background-color: lightyellow;
+}
+
+/* Template 3 specific styles */
+.template3 #left-box {
+    background-color: darkgreen;
+}
+
+.template3 #right-box {
+    background-color: lightpink;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    #resume-content {
+        flex-direction: row;
+    }
+
+    #left-box {
+        width: 30%;
+        padding: 30px;
+        text-align: left;
+    }
+
+    #right-box {
+        width: 70%;
+        padding: 30px;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 30px;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+    }
+}
+
+/* Additional styling */
+#left-box img {
+    margin-bottom: 20px;
+}
+
+#right-box h3, #main-content h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#right-box p, #main-content p {
+    line-height: 1.6;
+}
+
+#right-box h4, #main-content h4 {
+    color: #555;
+}
+
+#right-box div, #main-content div {
+    margin-bottom: 20px;
+}
